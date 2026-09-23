@@ -131,7 +131,7 @@ export function Hero() {
         <video
           ref={videoRef}
           className="sticky top-0 h-screen w-full transform-gpu object-cover will-change-transform"
-          src="/videos/classplus-creator-banner.mp4"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/videos/classplus-creator-banner.mp4`}
           muted
           playsInline
           preload="auto"
